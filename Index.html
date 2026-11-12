@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- lang="pt-BR" avisa ao navegador que o site está em português -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: faz o site se ajustar à tela do celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Seu Nome, estudante de desenvolvimento.">
+  <title>Início | Portfólio de Seu Nome</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <!-- Fonte Poppins (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Arquivo de estilo único para todas as páginas -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- CABEÇALHO com o título e o menu de navegação -->
+  <header>
+    <h1>Seu Nome</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- CONTEÚDO PRINCIPAL (só pode ter um <main> por página) -->
+  <main>
+    <section class="cartao apresentacao">
+      <!-- alt = texto que descreve a imagem (acessibilidade) -->
+      <img class="foto-perfil" src="img/foto.svg" alt="Foto de perfil de Seu Nome">
+      <div>
+        <h2>Olá, eu sou Seu Nome!</h2>
+        <p>
+          Sou estudante de desenvolvimento de sistemas no SENAI. Estou
+          aprendendo a criar sites e aplicativos e gosto de usar tecnologia
+          para resolver problemas reais e tornar o acesso digital mais
+          inclusivo.
+        </p>
+      </div>
+    </section>
+    <section class="cartao">
+      <h2>Minhas habilidades</h2>
+      <!-- Lista não ordenada -->
+      <ul class="lista-habilidades">
+        <li>HTML5 e CSS3</li>
+        <li>Uso do VS Code e do Live Server</li>
+        <li>Git e GitHub</li>
+        <li>Trabalho em equipe</li>
+        <li>Acessibilidade digital</li>
+      </ul>
+    </section>
+    <section class="cartao">
+      <h2>Onde me encontrar</h2>
+      <p>
+        Veja meu perfil no
+        <!-- Link externo: target="_blank" abre em nova aba;
+             rel="noopener noreferrer" é uma boa prática de segurança -->
+        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
